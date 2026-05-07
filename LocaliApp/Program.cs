@@ -53,6 +53,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<ILocaliService, LocaliService>();
+builder.Services.AddScoped<IRecensioniService, RecensioniService>();
 
 builder.Services.AddControllers();
 
