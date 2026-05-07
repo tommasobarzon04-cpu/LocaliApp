@@ -21,9 +21,9 @@ namespace LocaliApp.Entities
 
         public List<Categoria> Categorie { get; set; } = new();
 
-        public List<string> FotoUrls { get; set; } = new(); // Lista di percorsi file locali
+        public List<string> FotoUrls { get; set; } = new(); 
 
-        // Relazione con l'utente creatore
+        
         public string? CreatorId { get; set; }
         public Utente? Creator { get; set; }
 

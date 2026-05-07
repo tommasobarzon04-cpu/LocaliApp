@@ -19,8 +19,7 @@ namespace LocaliApp.Data
         {
             base.OnModelCreating(builder);
 
-            // Per salvare la lista di URL come JSON nel DB SQLite (che non supporta array primitivi nativamente)
-            // Stiamo utilizzando una conversione semplice per conservare la lista di stringhe
+            
             builder.Entity<Locale>()
                 .Property(l => l.FotoUrls)
                 .HasConversion(
