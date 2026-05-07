@@ -1,0 +1,6 @@
+@LocaliApp_HostAddress = http://localhost:5136
+
+GET {{LocaliApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
