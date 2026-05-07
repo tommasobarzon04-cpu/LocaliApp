@@ -51,6 +51,8 @@ builder.Services.AddAuthentication(options =>
 
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IImageService, ImageService>();
+builder.Services.AddScoped<ILocaliService, LocaliService>();
 
 builder.Services.AddControllers();
 
@@ -77,7 +79,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles(); // Abilita i file statici come le immagini che caricheremo
 
 app.UseAuthentication();
 app.UseAuthorization();
